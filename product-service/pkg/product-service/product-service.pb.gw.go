@@ -77,7 +77,7 @@ func RegisterProductServiceHandlerServer(ctx context.Context, mux *runtime.Serve
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		rctx, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/ozonmp.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct", runtime.WithHTTPPathPattern("/products/create"))
+		rctx, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct", runtime.WithHTTPPathPattern("/products/create"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -139,7 +139,7 @@ func RegisterProductServiceHandlerClient(ctx context.Context, mux *runtime.Serve
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		rctx, err := runtime.AnnotateContext(ctx, mux, req, "/ozonmp.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct", runtime.WithHTTPPathPattern("/products/create"))
+		rctx, err := runtime.AnnotateContext(ctx, mux, req, "/ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct", runtime.WithHTTPPathPattern("/products/create"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return

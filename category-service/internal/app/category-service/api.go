@@ -1,8 +1,8 @@
 package category_service
 
 import (
-	"github.com/ozonmp/week-3-workshop/category-service/internal/service/category"
-	desc "github.com/ozonmp/week-3-workshop/category-service/pkg/category-service"
+	"github.com/ozon-edu-go-2021/week-3-workshop/category-service/internal/service/category"
+	desc "github.com/ozon-edu-go-2021/week-3-workshop/category-service/pkg/category-service"
 )
 
 type Implementation struct {

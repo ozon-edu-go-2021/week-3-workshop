@@ -252,14 +252,14 @@ func file_api_product_service_product_service_proto_rawDescGZIP() []byte {
 
 var file_api_product_service_product_service_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_api_product_service_product_service_proto_goTypes = []interface{}{
-	(*Product)(nil),               // 0: ozonmp.week_3_workshop.product_service.product_service.v1.Product
-	(*CreateProductRequest)(nil),  // 1: ozonmp.week_3_workshop.product_service.product_service.v1.CreateProductRequest
-	(*CreateProductResponse)(nil), // 2: ozonmp.week_3_workshop.product_service.product_service.v1.CreateProductResponse
+	(*Product)(nil),               // 0: ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.Product
+	(*CreateProductRequest)(nil),  // 1: ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.CreateProductRequest
+	(*CreateProductResponse)(nil), // 2: ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.CreateProductResponse
 }
 var file_api_product_service_product_service_proto_depIdxs = []int32{
-	0, // 0: ozonmp.week_3_workshop.product_service.product_service.v1.CreateProductResponse.result:type_name -> ozonmp.week_3_workshop.product_service.product_service.v1.Product
-	1, // 1: ozonmp.week_3_workshop.product_service.product_service.v1.ProductService.CreateProduct:input_type -> ozonmp.week_3_workshop.product_service.product_service.v1.CreateProductRequest
-	2, // 2: ozonmp.week_3_workshop.product_service.product_service.v1.ProductService.CreateProduct:output_type -> ozonmp.week_3_workshop.product_service.product_service.v1.CreateProductResponse
+	0, // 0: ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.CreateProductResponse.result:type_name -> ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.Product
+	1, // 1: ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService.CreateProduct:input_type -> ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.CreateProductRequest
+	2, // 2: ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService.CreateProduct:output_type -> ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.CreateProductResponse
 	2, // [2:3] is the sub-list for method output_type
 	1, // [1:2] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

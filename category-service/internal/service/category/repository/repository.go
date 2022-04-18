@@ -3,7 +3,7 @@ package cat_repository
 import (
 	"context"
 
-	"github.com/ozonmp/week-3-workshop/category-service/internal/service/category"
+	"github.com/ozon-edu-go-2021/week-3-workshop/category-service/internal/service/category"
 )
 
 var categories = category.Categories{

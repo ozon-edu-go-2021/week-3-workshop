@@ -31,7 +31,7 @@ func NewProductServiceClient(cc grpc.ClientConnInterface) ProductServiceClient {
 
 func (c *productServiceClient) CreateProduct(ctx context.Context, in *CreateProductRequest, opts ...grpc.CallOption) (*CreateProductResponse, error) {
 	out := new(CreateProductResponse)
-	err := c.cc.Invoke(ctx, "/ozonmp.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -76,7 +76,7 @@ func _ProductService_CreateProduct_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/ozonmp.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct",
+		FullMethod: "/ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService/CreateProduct",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ProductServiceServer).CreateProduct(ctx, req.(*CreateProductRequest))
@@ -88,7 +88,7 @@ func _ProductService_CreateProduct_Handler(srv interface{}, ctx context.Context,
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ProductService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "ozonmp.week_3_workshop.product_service.product_service.v1.ProductService",
+	ServiceName: "ozon-edu-go-2021.week_3_workshop.product_service.product_service.v1.ProductService",
 	HandlerType: (*ProductServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
